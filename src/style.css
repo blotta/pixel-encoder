@@ -1,0 +1,121 @@
+html {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: azure;
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #3c3c3c;
+}
+
+h1.title {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.content {
+    width: 70%;
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+#workspace {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+canvas#canvas {
+    display: block;
+    margin: 30px auto;
+}
+
+canvas#preview-canvas {
+    display: block;
+    margin: 30px auto;
+}
+
+#animation-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#animation-btns div{
+    margin: 0 30px;
+}
+
+
+#play-stop-btn {
+    padding: 10px;
+    background-color: #555;
+    border: 1px solid gray;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#play-stop-btn:hover {
+    background-color: #888;
+}
+
+#animation {
+    margin: 20px 0;
+    display: flex;
+}
+
+#frames {
+    background-color: lightgray;
+    min-height: 60px;
+    /* overflow-x: scroll; */
+    flex-grow: 1;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+#frame-btns {
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+#frame-btns button {
+    display: block;
+    min-width: 20px;
+    flex-grow: 1;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+}
+#frame-btns button:hover {
+    background-color: #ddd;
+}
+
+.frame {
+    box-sizing: border-box;
+    background-color: #3c3c3c;
+    border: 2px solid lightgray;
+    border-radius: 3px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.frame.frame-current {
+    background-color: #555;
+    border: 2px solid orangered;
+}
+.frame.preview-current {
+    background-color: #555;
+}
+
+.frame:hover {
+    background-color: #777;
+    /* border: 1px solid #ff9; */
+}
+
+#output {
+    /* width: 50%; */
+    background-color: antiquewhite;
+    color: black;
+    font-size: large;
+    font-family: monospace;
+}
